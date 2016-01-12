@@ -13,7 +13,7 @@
     <span>Push-up goal:</span>
     <div></div>
     <script>
-      var annualPushupCount = 20000;
+      var annualPushupCount = 40000;
       var daysInYear = moment().isLeapYear() ? 366 : 365;
       $('div').text(Math.ceil(moment().dayOfYear() * (annualPushupCount / daysInYear)));
     </script>
