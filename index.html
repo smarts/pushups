@@ -1,9 +1,7 @@
 <html>
   <head>
     <title></title>
-    <script crossorigin="anonymous" integrity="sha512-2J3JEEO/NYZcmStMmq+oRlcKCz0mTOF6/OLwQxSc7y/WmhHgN0165ZAy/vuRBI0qUVtxYFOPv0atuXMxuCIZnQ==" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js" ></script>
     <script crossorigin="anonymous" integrity="sha512-vjqLmddiMORo2KKnzvlZ0fMnp7Z8+U+PIzG8h/TLVhZyXpbvdfiaPiZCVtzMIC91TeM5mNKIbTIMMlPAH70uoA==" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha512-SFaNb3xC08k/Wf6CRM1J+O/vv4YWyrPBSdy0o+1nqKzf+uLrIBnaeo8aYoAAOd31nMNHwX8zwVwTMbbCJjA8Kg==" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <style>
       body { font: 15em sans-serif; }
     </style>
@@ -14,7 +12,7 @@
     <script>
       var annualPushupCount = 40000;
       var daysInYear = moment().isLeapYear() ? 366 : 365;
-      $('div').text(Math.ceil(moment().dayOfYear() * (annualPushupCount / daysInYear)));
+      document.querySelector('div').textContent = '' + Math.ceil(moment().dayOfYear() * (annualPushupCount / daysInYear));
     </script>
   </body>
 </html>
